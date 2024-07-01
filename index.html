@@ -1,30 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desafio 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-    <header class="caixa">
-        
-            <h1><img src="logo-plataforma.png"></h1>
-            <h2><img src="barra-pesquisas.png"></h2>
-            <h3><img src="foto-perfil.png"></h3></header>
-        <nav>
-            <ul>
-                <p class="menu"><a href="index.html">Menu</a> </p>
-                <li class="editor"><a href="editor.html">Editor de codigo </a></li>
-                <li class="comunidade"><a href="comunidade.html">Comunidade</a></li>
-            </ul>
-
-        </nav>  
-      
+    <header class="cabecalho">
+        <h1><img src="Logo.png" alt="logo"></h1>
+        <input id="busque" type="text" value="Busque por algo" alt="Busque por algo" />
+        <h3><img src="author.png" alt="perfil"></h3>
     </header>
-    <main>
-
-    </main>
-    <footer></footer>
+    <div class="content">
+        <div class="inputs">
+            <p>MENU</p>
+            <div class="input_button">
+                <input type="image" id="image" alt="Editor de códigos" src="Icon (1).png" />
+                <span> Editor de código</span>
+            </div>
+            <div class="input_button">
+                <input type="image" id="image" alt="Editor de códigos" src="Icon (2).png" />
+                <span> Comunidade</span>
+            </div>
+        </div>
+        <div class="mid">
+            <img src="mac_buttons.png" class="mac_buttons">
+            <textarea name="descricao" readonly>const pluckDeep = key => obj => key.split('.').reduce((accum, key) =>
+                accum[key], obj)
+            
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),
+                res)
+                            
+                const unfold = (f, seed) => {
+                const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                }
+                return go(f, seed, [])
+                }</textarea>
+            <button class="vizualizar">Vizualizar com Highligth</button>
+        </div>
+        <div class="direita">
+            <div>
+                <P>SEU PROJETO</P>
+                <input type="text" id="nome" value="Nome do seu projeto" alt="Nome do seu projeto" />
+                <input type="text" class="d" value="Descrição do seu projeto" alt="Descrição do seu projeto" />
+            </div>
+            <div>
+                <p>PERSONALIZAÇÃO</p>
+                <select>
+                    <option value="0"> JavaScript </option>
+                    <option value="1">c++</option>
+                    <option value="2">Ruby</option>
+                </select>
+                <input type="color" value="#6bd1ff" class="inputcolor" />
+            </div>
+            <div>
+                <button class=" salvar">Salvar projeito</button>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
+</html>
+
+
 </html>
